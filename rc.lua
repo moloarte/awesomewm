@@ -4,6 +4,10 @@ require("awesome-wm-widgets.battery-widget.battery")
 require("awesome-wm-widgets.volume-widget.volume")
 require("awesome-wm-widgets.volumebar-widget.volumebar")
 require("awesome-wm-widgets.weather-widget.weather")
+require("awesome-wm-widgets.battery-widget.battery")
+require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -225,12 +229,12 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-	        cpu_widget,
-	        brightness_widget,
-	        battery_widget,
-	        volume_widget,
+            volume_widget,
 	        volumebar_widget,
-	        weather_widget,
+            cpu_widget,
+            batteryarc_widget,
+            weather_widget,            
+	        brightness_widget,
             mytextclock,
             s.mylayoutbox,
         },
@@ -567,3 +571,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 
 -- }}}
+awful.util.spawn("xscreensaver")

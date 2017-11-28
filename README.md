@@ -20,11 +20,19 @@ standard awesome with:
 * weather widget
 * batteryarc widget
 
-# Requirements
+## Requirements
 
 1. https://github.com/streetturtle/awesome-wm-widgets
-2. https://github.com/horst3180/arc-icon-theme#installation
-3. lua-socket package 
+1. https://github.com/horst3180/arc-icon-theme#installation
+1. lua-socket package 
+
 ## Additional Controls
 
 * Super + Control L : xscreensaver-command -lock
+
+## Test your configuration
+
+I use the follow commands to test my configuration before reloading
+
+1. Xephyr  :1 -ac -br -noreset -screen 1152x720 &
+1. DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.lua 

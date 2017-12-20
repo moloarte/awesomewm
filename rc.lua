@@ -3,7 +3,7 @@ require("awesome-wm-widgets.cpu-widget.cpu-widget")
 require("awesome-wm-widgets.battery-widget.battery")
 require("awesome-wm-widgets.volume-widget.volume")
 require("awesome-wm-widgets.volumebar-widget.volumebar")
-require("awesome-wm-widgets.weather-widget.weather")
+-- require("awesome-wm-widgets.weather-widget.weather")
 require("awesome-wm-widgets.battery-widget.battery")
 require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 
@@ -233,7 +233,7 @@ awful.screen.connect_for_each_screen(function(s)
 	        volumebar_widget,
             cpu_widget,
             batteryarc_widget,
-            weather_widget,            
+            --weather_widget,            
 	        brightness_widget,
             mytextclock,
             s.mylayoutbox,

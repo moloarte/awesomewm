@@ -1,3 +1,4 @@
+require("awesome-wm-widgets.email-widget.email")
 require("awesome-wm-widgets.brightness-widget.brightness")
 require("awesome-wm-widgets.cpu-widget.cpu-widget")
 require("awesome-wm-widgets.battery-widget.battery")
@@ -229,6 +230,8 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+	    email_icon,
+	    email_widget,
             volume_widget,
 	        volumebar_widget,
             cpu_widget,

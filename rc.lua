@@ -1,4 +1,3 @@
-require("awesome-wm-widgets.email-widget.email")
 require("awesome-wm-widgets.brightness-widget.brightness")
 require("awesome-wm-widgets.cpu-widget.cpu-widget")
 require("awesome-wm-widgets.battery-widget.battery")
@@ -53,6 +52,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
+beautiful.wallpaper = awful.util.get_configuration_dir() .. "background2.jpeg"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
@@ -230,8 +230,6 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-	    email_icon,
-	    email_widget,
             volume_widget,
 	        volumebar_widget,
             cpu_widget,

@@ -27,8 +27,9 @@ kbdcfg =
     {
         layouts = {
             {name = "US", layout = "us", variant = nil},
-            {name = "DE", layout = "de", variant = nil},
-            {name = "ES", layout = "es", variant = nil}
+            {name = "CH", layout = "ch", variant = nil},
+            {name = "ES", layout = "es", variant = nil},
+	    {name = "RU", layout = "ru", variant = nil}
         }
     }
 )
@@ -402,7 +403,7 @@ globalkeys =
         "l",
         function()
             awful.util.spawn("sync")
-            awful.util.spawn("xscreensaver-command -lock")
+            awful.util.spawn("gnome-screensaver-command --lock")
         end
     ),
     awful.key(

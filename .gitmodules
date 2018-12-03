@@ -1,3 +1,6 @@
 [submodule "keyboard-layout-indicator"]
 	path = keyboard-layout-indicator
 	url = https://github.com/deficient/keyboard-layout-indicator.git
+[submodule "awesome-wm-widgets"]
+	path = awesome-wm-widgets
+	url = https://github.com/moloarte/awesome-wm-widgets.git
